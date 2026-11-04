@@ -1,39 +1,52 @@
 # Maaz Bin Mustaqeem
 
-**Software engineer | AI systems, Python backends, and architecture**
+**Software engineer building AI products, backend systems, and the architecture that makes them reliable.**
 
-I work on the part of software that gets difficult after the demo: designing reliable workflows, integrating models with real tools and data, and shipping applications that people can use. I take projects from ambiguous requirements through architecture, implementation, and deployment.
+I take on engineering problems from the first design decision through implementation and deployment. My work spans Python/FastAPI, agent infrastructure, RAG, evaluation, AWS, and multi-tenant SaaS, often with international teams.
 
-Based in Karachi, working with international teams and clients. Available for independent projects, architecture consulting, and longer-term engineering partnerships.
+**[Portfolio](https://maazbin.github.io/portfolio/)** · **[Work with me](mailto:maaz.mstqm@gmail.com?subject=Engineering%20project)** · [Upwork](https://www.upwork.com/freelancers/~01d356fcc8c8e07e51) · [LinkedIn](https://www.linkedin.com/in/maaz-bin-mustaqeem-34990b194/) · [Video introduction](https://youtu.be/qx9zmU8CkhI)
 
-[Portfolio](https://maazbin.github.io/portfolio/) · [Discuss a project](mailto:maaz.mstqm@gmail.com?subject=Engineering%20project) · [Upwork](https://www.upwork.com/freelancers/~01d356fcc8c8e07e51) · [LinkedIn](https://www.linkedin.com/in/maaz-bin-mustaqeem-34990b194/) · [Video introduction](https://youtu.be/qx9zmU8CkhI)
+## Production work
 
-## Selected open-source work
+These products are a stronger representation of my engineering experience than public repositories alone. They were developed with teams; the source code for commercial systems is not public.
 
-| Project | Engineering problem | Evidence |
+<table>
+<tr>
+<td width="43%" valign="top"><a href="https://xyova.com/"><img src="https://raw.githubusercontent.com/maazbin/portfolio/main/images/xyova-preview.png" alt="Actual screenshot of the Xyova website" width="520"></a></td>
+<td valign="top"><h3><a href="https://xyova.com/">Xyova</a> | AI lesson evaluation</h3>
+<strong>The challenge:</strong> A lesson score means little if its reasoning cannot be checked.<br><br>
+<strong>My work:</strong> AI evaluation and backend architecture, recorded-lesson processing, multilingual workflows, and findings tied to quoted, timestamped evidence with statistical review.<br><br>
+<a href="https://xyova.com/">Live product</a> · <a href="https://maazbin.github.io/portfolio/#work">Engineering case study</a>
+</td>
+</tr>
+<tr>
+<td width="43%" valign="top"><a href="https://mishkatvle.com/"><img src="https://raw.githubusercontent.com/maazbin/portfolio/main/images/mishkat-vle-preview.png" alt="Actual screenshot of the Mishkat VLE website" width="520"></a></td>
+<td valign="top"><h3><a href="https://mishkatvle.com/">Mishkat VLE</a> | Multi-tenant education platform</h3>
+<strong>The challenge:</strong> Students, teachers, parents, and administrators need distinct workflows on a shared system.<br><br>
+<strong>My work:</strong> FastAPI/PostgreSQL architecture, AWS services, role-aware backend design, asynchronous workflows, and infrastructure supporting live classes and AI-powered learning.<br><br>
+<a href="https://mishkatvle.com/">Live product</a> · <a href="https://maazbin.github.io/portfolio/#work">Engineering case study</a>
+</td>
+</tr>
+</table>
+
+**Also delivered**
+
+- **Cerebra:** Multimodal document intelligence across PDFs, images, handwritten notes, audio, and video, with checkpointed LangGraph workflows and human review. [Product](https://cerebra.jambits.io/)
+- **Legal AI Agent MVP:** A scoped, deployed MVP for an Upwork client. I recommended validating the idea before committing to a larger build. The client left a 5-star review. [Client profile and feedback](https://www.upwork.com/freelancers/~01d356fcc8c8e07e51)
+
+## Open-source engineering
+
+| Project | Why it exists | See it |
 | --- | --- | --- |
-| **JobPilot** | Give coding agents a dependable way to execute logged-in browser workflows, remember previous actions, and recover from failures, without embedding another LLM. | [Source](https://github.com/maazbin/jobpilot) · [Demo](https://github.com/maazbin/jobpilot/blob/main/docs/demo.gif) |
-| **devcontract** | Make repository history and engineering conventions useful to coding agents through MCP. The current implementation emphasizes deterministic understanding and traceable Git evidence. | [Source](https://github.com/maazbin/devcontract) |
-| **Leadline** | Organize local go-to-market workflows around one browser, persistent records, and explicit controls for outbound actions. | [Source](https://github.com/maazbin/leadline) |
-| **FastAPI Boilerplate** | A practical starting point for authentication, sessions, schema validation, and organized Python API modules. | [Source](https://github.com/maazbin/fastapi-boilerplate) |
+| **JobPilot** | Let an external coding agent operate logged-in browser workflows with MCP tools, persistent application history, and failure evidence. No embedded LLM. | [Code](https://github.com/maazbin/jobpilot) · [Demo](https://github.com/maazbin/jobpilot/blob/main/docs/demo.gif) |
+| **devcontract** | Give coding agents deterministic repository understanding and evidence from Git history. | [Code](https://github.com/maazbin/devcontract) |
+| **Leadline** | Organize local business outreach across browser workflows, records, and action controls. | [Code](https://github.com/maazbin/leadline) |
+| **FastAPI Boilerplate** | A reusable base for authenticated Python APIs, sessions, validation, and organized backend modules. | [Code](https://github.com/maazbin/fastapi-boilerplate) |
 
-## Products I've helped build
+## How I approach engineering
 
-**[Xyova](https://xyova.com/)**: Evaluation of recorded lessons with quoted, timestamped evidence, multilingual processing, and statistical review. The challenge is not just assigning a score, but making it defensible.
+I start with the business constraint, not the framework. I try to remove unnecessary complexity, make tradeoffs visible, and leave behind systems that can be maintained.
 
-**[Mishkat VLE](https://mishkatvle.com/)**: Multi-tenant education software with role-aware portals, AI learning features, live classrooms, and student engagement. The challenge is supporting different users without fragmenting the system.
+A practical example: for a recording workflow, S3 multipart uploads and crash recovery were a better fit than building an unnecessary real-time streaming pipeline.
 
-**Cerebra**: Multimodal document intelligence across documents, images, speech, and video, with checkpointed agent workflows and human review.
-
-Some commercial product repositories are private. Public websites, demos, and architecture explanations are linked where available.
-
-## How I work
-
-- **Find the constraint:** what actually needs to work, for whom, and under what limits.
-- **Choose the architecture:** data boundaries, reliability, security, cost, and build-versus-buy tradeoffs.
-- **Own the implementation:** Python/FastAPI, PostgreSQL, AWS, LangGraph, MCP, background jobs, tests, deployment, and review.
-- **Validate the result:** observable behavior, evidence-backed evaluation, and clear handoff.
-
-One example: for a client-facing recording workflow, I favored S3 multipart persistence and crash recovery over a more complex streaming stack when the simpler design met the need.
-
-**Need help with a system or a product?** [Send me the problem](mailto:maaz.mstqm@gmail.com?subject=Engineering%20challenge). A useful conversation starts with the constraints, not a tool list.
+**Have a difficult problem or a product to build?** [Send me the context](mailto:maaz.mstqm@gmail.com?subject=Engineering%20challenge). Projects, technical consulting, and engineering partnerships are welcome.
