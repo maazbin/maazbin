@@ -4,7 +4,7 @@
 
 I take on engineering problems from the first design decision through implementation and deployment. My work spans Python/FastAPI, agent infrastructure, RAG, evaluation, AWS, and multi-tenant SaaS, often with international teams.
 
-**[Portfolio](https://maazbin.github.io/portfolio/)** · **[Work with me](mailto:maaz.mstqm@gmail.com?subject=Engineering%20project)** · [Upwork](https://www.upwork.com/freelancers/~01d356fcc8c8e07e51) · [LinkedIn](https://www.linkedin.com/in/maaz-bin-mustaqeem-34990b194/) · [Video introduction](https://youtu.be/qx9zmU8CkhI)
+**[Portfolio](https://maazbin.github.io/portfolio/)** · **[Work with me](mailto:maaz.mstqm@gmail.com?subject=Engineering%20project)** · [Upwork](https://www.upwork.com/freelancers/~01d356fcc8c8e07e51) · [LinkedIn](https://www.linkedin.com/in/maaz-bin-mustaqeem-34990b194/) · [Video introduction](https://youtu.be/WBjUWPSJlfQ)
 
 ## Production work
 
